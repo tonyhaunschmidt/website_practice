@@ -1,1 +1,15 @@
+$main-one: purple;
+$main-two: yellow;
 
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  min-height: 100%
+}
+
+header, footer{
+  background-color: $main-one;
+  height: 100px
+}
