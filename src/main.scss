@@ -18,10 +18,6 @@ html, body{
 576
 */
 
-header, footer{
-  background-color: $main-one;
-  height: 100px;
-}
 
 .highlight_text{
   color: $main-one;
@@ -65,19 +61,22 @@ h2{
     margin-bottom: 10px;
   }
 
-#hero{
-  
+header{
   display: flex;
-  flex-direction: column;
+  #logo_title_container{
+    display: flex;
+    .logo{
+      height: 80px;
+    }
+  }
+}
+
+#hero{
   .carousel{
-    flex-grow: 1;
-    background-color: red;
     img{
       height: 45vw;
     }
     h2{
-      background-color: blue;
-      z-index: 30;
     }
   }
 }

@@ -1,23 +1,97 @@
 import React, { useState } from 'react'
 
+import Navbar from 'react-bootstrap/Navbar'
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
 import Carousel from 'react-bootstrap/Carousel'
-import Offcanvas from 'react-bootstrap/Offcanvas'
-import Button from 'react-bootstrap/Button'
+//import Offcanvas from 'react-bootstrap/Offcanvas'
+//import Button from 'react-bootstrap/Button'
 
+import logo from './assets/logo.png'
 import heroOne from './assets/hero_one.webp'
 import heroTwo from './assets/hero_two.webp'
 import heroThree from './assets/hero_three.webp'
 
 function App() {
 
-  const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
     <>
-      <header></header>
+      <header>
+        <div id='logo_title_container'> {/* add link to home */}
+          <img src={logo} alt='wonka_logo' className='logo' />
+          <h3><span>WILLY WONKA'S</span><br />CHOCOLATE FACTORY</h3>
+        </div>
+        <Navbar bg="light" expand="lg">
+          <Container>
+            {/*<Navbar.Brand href="#home">MENU</Navbar.Brand>   hide at full screen*/}
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="#">Home</Nav.Link>
+                <NavDropdown title="Rooms" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Key Information" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Our Factory" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Chocolates" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Virtual Office" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
+                  <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Link href="#">Contact</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </header>
       <section id='hero'>
         <div className='underline_container'>
           <div className='colour_one_box'></div>
@@ -25,49 +99,29 @@ function App() {
           <div className='colour_one_box'></div>
           <div className='colour_two_box'></div>
         </div>
-
         <Carousel fade indicators={false} controls={false}>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={heroOne}
-              alt="First slide"
-            />
+            <img className="d-block w-100" src={heroOne} alt="First slide" />
             <Carousel.Caption>
-              <Button variant="primary" onClick={handleShow}>
-                Launch
-              </Button>
-
-              <Offcanvas show={show} onHide={handleClose}>
-                <Offcanvas.Header closeButton>
-                  <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                  Some text as placeholder. In real life you can have the elements you
-                  have chosen. Like, text, images, lists, etc.
-                </Offcanvas.Body>
-              </Offcanvas>
-              <h2>A little <span>NONSENSE</span> now and then is relished by the <span>WISEST</span> men</h2>
+              <h2>A LITTLE <span>NONSENSE</span> NOW AND THEN IS RELISHED BY THE <span>WISEST</span> MEN</h2>
+              <h4>EXPLORE</h4>
+              <h4><span class="material-symbols-outlined">keyboard_double_arrow_down</span></h4> {/*link to move down and jump on hover*/}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={heroTwo}
-              alt="Second slide"
-            />
+            <img className="d-block w-100" src={heroTwo} alt="Second slide" />
             <Carousel.Caption>
-              <h2>A little <span>NONSENSE</span> now and then is relished by the <span>WISEST</span> men</h2>
+              <h2>A LITTLE <span>NONSENSE</span> NOW AND THEN IS RELISHED BY THE <span>WISEST</span> MEN</h2>
+              <h4>EXPLORE</h4>
+              <h4><span class="material-symbols-outlined">keyboard_double_arrow_down</span></h4> {/*link to move down and jump on hover*/}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={heroThree}
-              alt="Third slide"
-            />
+            <img className="d-block w-100" src={heroThree} alt="Third slide" />
             <Carousel.Caption>
-              <h2>A little <span>NONSENSE</span> now and then is relished by the <span>WISEST</span> men</h2>
+              <h2>A LITTLE <span>NONSENSE</span> NOW AND THEN IS RELISHED BY THE <span>WISEST</span> MEN</h2>
+              <h4>EXPLORE</h4>
+              <h4><span class="material-symbols-outlined">keyboard_double_arrow_down</span></h4> {/*link to move down and jump on hover*/}
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -144,7 +198,7 @@ function App() {
               Itasca, <br />
               IL 60143
             </address>
-            {/*<img />*/}
+            <img src={logo} alt='wonka_logo' className='logo' />
           </div>
         </div>
         <div id='contact_us' className='contact_info'>
