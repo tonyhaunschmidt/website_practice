@@ -230,7 +230,15 @@ function App() {
           {/*<img />*/}
         </div>
       </section>
-      <footer></footer>
+      <footer>
+        <p><small>&copy; Willy Wonka's Chocolate Factory. All Rights Reserved. Website by <a href='https://www.tonyhaunschmidt.com/'>Tony Haunschmidt</a>.</small></p>
+        <ul>
+          <a href="#"><li><small>Website Policy</small></li></a>
+          <a href="#"><li><small>Cookies Policy</small></li></a>
+          <a href="#"><li><small>Login</small></li></a> {/*hide and have another section above that is unhid */}
+          <a href="#"><li><span class="material-symbols-outlined">lock</span></li></a>
+        </ul>
+      </footer>
     </>
 
   );
