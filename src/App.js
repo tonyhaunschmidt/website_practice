@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef } from 'react'
 
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
@@ -14,6 +14,15 @@ import heroTwo from './assets/hero_two.webp'
 import heroThree from './assets/hero_three.webp'
 
 function App() {
+
+  const welcome = useRef(null)
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth'
+    })
+  }
 
 
 
@@ -105,7 +114,7 @@ function App() {
             <Carousel.Caption>
               <h2>A LITTLE <span>NONSENSE</span> NOW AND THEN IS RELISHED BY THE <span>WISEST</span> MEN</h2>
               <h4>EXPLORE</h4>
-              <h4><span class="material-symbols-outlined">keyboard_double_arrow_down</span></h4> {/*link to move down and jump on hover*/}
+              <h4 onClick={() => scrollToSection(welcome)}><span className="material-symbols-outlined">keyboard_double_arrow_down</span></h4> {/*link to move down and jump on hover*/}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -113,7 +122,7 @@ function App() {
             <Carousel.Caption>
               <h2>A LITTLE <span>NONSENSE</span> NOW AND THEN IS RELISHED BY THE <span>WISEST</span> MEN</h2>
               <h4>EXPLORE</h4>
-              <h4><span class="material-symbols-outlined">keyboard_double_arrow_down</span></h4> {/*link to move down and jump on hover*/}
+              <h4 onClick={() => scrollToSection(welcome)}><span className="material-symbols-outlined">keyboard_double_arrow_down</span></h4> {/*link to move down and jump on hover*/}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -121,7 +130,7 @@ function App() {
             <Carousel.Caption>
               <h2>A LITTLE <span>NONSENSE</span> NOW AND THEN IS RELISHED BY THE <span>WISEST</span> MEN</h2>
               <h4>EXPLORE</h4>
-              <h4><span class="material-symbols-outlined">keyboard_double_arrow_down</span></h4> {/*link to move down and jump on hover*/}
+              <h4 onClick={() => scrollToSection(welcome)}><span className="material-symbols-outlined">keyboard_double_arrow_down</span></h4> {/*link to move down and jump on hover*/}
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -132,7 +141,7 @@ function App() {
           <div className='colour_two_box'></div>
         </div>
       </section>
-      <section id='welcome'>
+      <section id='welcome' ref={welcome}>
         {/*<img />*/}
         <h1><span id='welcome_to'>WELCOME TO</span><br />Willy Wonka's Cholocolate Factory</h1>
         <div className='underline_container'><div className='colour_one'></div><div className='colour_two'></div></div>

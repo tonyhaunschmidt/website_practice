@@ -77,6 +77,16 @@ header{
       height: 45vw;
     }
     h2{
+
+    }
+    h4{
+      .material-symbols-outlined{
+        font-size: 60px;
+        &:hover{
+          cursor: pointer;
+          /*bounce effect*/
+        }
+      }
     }
   }
 }
