@@ -27,15 +27,40 @@ header, footer{
   color: $main-one;
 }
 
+.underline_container{
+  display: flex;
+  .colour_one_box, .colour_two_box{
+    height: 5px;
+    flex-grow: 1;
+  }
+  .colour_one_box{
+    background-color: $main-one;
+  }
+  .colour_two_box{
+    background-color: $main-two;
+  }
+}
+
+.subheader_container{
+  display: flex;
+  align-items: flex-end;
+  h1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  div{
+    flex-grow: 1;
+    text-align: end;
+  }
+}
+
 .contact_info{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.title_container{
-  border-bottom: 6px solid $main-two;
-  h2{
+h2{
     margin-bottom: 10px;
   }
-}
