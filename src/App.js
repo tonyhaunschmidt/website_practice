@@ -1,17 +1,76 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import Carousel from 'react-bootstrap/Carousel'
+import Offcanvas from 'react-bootstrap/Offcanvas'
+import Button from 'react-bootstrap/Button'
+
+import heroOne from './assets/hero_one.webp'
+import heroTwo from './assets/hero_two.webp'
+import heroThree from './assets/hero_three.webp'
 
 function App() {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
       <header></header>
-      <section className='hero'>
+      <section id='hero'>
         <div className='underline_container'>
           <div className='colour_one_box'></div>
           <div className='colour_two_box'></div>
           <div className='colour_one_box'></div>
           <div className='colour_two_box'></div>
         </div>
-        <h2>A little <span>NONSENSE</span> now and then is relished by the <span>WISEST</span> men</h2>
+
+        <Carousel fade indicators={false} controls={false}>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={heroOne}
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <Button variant="primary" onClick={handleShow}>
+                Launch
+              </Button>
+
+              <Offcanvas show={show} onHide={handleClose}>
+                <Offcanvas.Header closeButton>
+                  <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                  Some text as placeholder. In real life you can have the elements you
+                  have chosen. Like, text, images, lists, etc.
+                </Offcanvas.Body>
+              </Offcanvas>
+              <h2>A little <span>NONSENSE</span> now and then is relished by the <span>WISEST</span> men</h2>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={heroTwo}
+              alt="Second slide"
+            />
+            <Carousel.Caption>
+              <h2>A little <span>NONSENSE</span> now and then is relished by the <span>WISEST</span> men</h2>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={heroThree}
+              alt="Third slide"
+            />
+            <Carousel.Caption>
+              <h2>A little <span>NONSENSE</span> now and then is relished by the <span>WISEST</span> men</h2>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
         <div className='underline_container'>
           <div className='colour_one_box'></div>
           <div className='colour_two_box'></div>
