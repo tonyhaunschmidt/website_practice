@@ -63,10 +63,14 @@ h2{
 header{
   display: flex;
   #logo_title_container{
+    background-color: white;
     display: flex;
     .logo{
       height: 80px;
     }
+  }
+  .navbar{
+    flex-grow: 1;
   }
 }
 
@@ -76,7 +80,10 @@ header{
       height: 45vw;
     }
     h2{
-
+      span{
+        font-weight: bolder;
+        font-size: larger;
+      }
     }
     h4{
       .material-symbols-outlined{
@@ -177,6 +184,7 @@ header{
     flex-direction: column;
     align-items: flex-start;
     .address_logo_container{
+      width: 100%;
       display: flex;
       justify-content: space-between;
       img{

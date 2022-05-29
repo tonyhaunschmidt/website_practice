@@ -38,7 +38,7 @@ function App() {
         </div>
         <Navbar bg="light" expand="lg">
           <Container>
-            {/*<Navbar.Brand href="#home">MENU</Navbar.Brand>   hide at full screen*/}
+            <Navbar.Brand href="#home">MENU</Navbar.Brand> {/* hide at certain size */}
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
@@ -239,6 +239,7 @@ function App() {
             </div>
           </div>
         </div>
+        {/*card - with overlay */}
       </section>
       <section id='map'>
         <div className='map_container'>
