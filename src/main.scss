@@ -54,11 +54,7 @@ html, body{
   }
 }
 
-.contact_info{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+
 
 h2{
     margin-bottom: 10px;
@@ -159,6 +155,37 @@ header{
     }
     .event_title_container{
       flex-grow: 1;
+    }
+  }
+}
+
+#map{
+  height: 300px;
+  .map_container{
+    height: 100%;
+    width: 100%;
+  }
+  
+}
+
+#contact{
+  display: flex;
+  justify-content: space-evenly;
+  .contact_info{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .address_logo_container{
+      display: flex;
+      justify-content: space-between;
+      img{
+      height: 150px;
+    }
+    }
+    
+    hr{
+      width: 100%;
     }
   }
 }

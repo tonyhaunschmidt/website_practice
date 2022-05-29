@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import Map, { Marker } from 'react-map-gl'
 
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
@@ -239,7 +240,23 @@ function App() {
           </div>
         </div>
       </section>
-      <section id='map'></section>
+      <section id='map'>
+        <div className='map_container'>
+          <Map
+            mapboxAccessToken='pk.eyJ1IjoidG9ueWhhdW5zY2htaWR0IiwiYSI6ImNsM3JqbXBwOTBtbjIzY253bW52Y3hvdzcifQ.Uaz5G9sy1R7ZNCJCvHDi0Q'
+            initialViewState={{
+              longitude: -88.038147,
+              latitude: 41.987720,
+              zoom: 14
+            }}
+            height='100%'
+            width='100%'
+            mapStyle="mapbox://styles/mapbox/streets-v9"
+          >
+            <Marker longitude={-88.038147} latitude={41.987720} color='red' />
+          </Map>
+        </div>
+      </section>
       <section id='accreditations'></section>
       <section id='contact'>
         <div id='find_us' className='contact_info'>
@@ -249,8 +266,8 @@ function App() {
               <div className='colour_two_box'></div>
             </div>
           </div>
-          <div className='address_image_container'>
-            <p><span className='highlight_text'>Willy Wonka's Chocolate Factory</span></p>
+          <p><span className='highlight_text'>Willy Wonka's Chocolate Factory</span></p>
+          <div className='address_logo_container'>
             <address>
               1445 Norwood Ave, <br />
               Itasca, <br />
@@ -258,6 +275,7 @@ function App() {
             </address>
             <img src={logo} alt='wonka_logo' className='logo' />
           </div>
+          <hr />
         </div>
         <div id='contact_us' className='contact_info'>
           <div className='title_container'>
@@ -276,6 +294,7 @@ function App() {
             <a href='tel:07852880898'><span className='highlight_text'>07852 880 898</span></a><br />
             <a href='mailto:tonyhaunschmidt@gmail.com'>admin@chocofactory.com</a>
           </address>
+          <hr />
         </div>
         <div id='partnership' className='contact_info'>
           <div className='title_container'>
@@ -286,6 +305,7 @@ function App() {
           </div>
           <p>Willy Wonka's Chocolate Factory is proud to be part of the British Chocolate Association.</p>
           {/*<img />*/}
+          <hr />
         </div>
       </section>
       <footer>
