@@ -8,6 +8,9 @@ $main-two: yellow;
 html, body{
   min-height: 100%;
   margin: 0;
+  section{
+    background-color: #fff;
+  }
 }
 
 /*
@@ -87,6 +90,42 @@ header{
           /*bounce effect*/
         }
       }
+    }
+  }
+}
+
+#events{
+  background-color: rgba(0,0,0,0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  #events_bg{
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+  }
+  .slogan_container{
+    color: white;
+    text-align: center;
+    margin: 0 0 0 50px;
+    min-width: 284px;
+    .underline_container{
+      padding: 0 20px 0 20px;
+    }
+    .slogan_top{
+      position: relative;
+      right: 42px;
+    }
+    .slogan_bottom{
+      position: relative;
+      left: 20px;
+    }
+    span{
+      font-weight: bolder;
+      font-size: larger;
     }
   }
 }

@@ -13,6 +13,8 @@ import heroOne from './assets/hero_one.webp'
 import heroTwo from './assets/hero_two.webp'
 import heroThree from './assets/hero_three.webp'
 
+import eventsBg from './assets/events_bg.jpeg'
+
 function App() {
 
   const welcome = useRef(null)
@@ -156,18 +158,29 @@ function App() {
           to other rooms in the factory via a dark tunnel.</p>
         <p>The river leads directly between the Chocolate Room and edible marshmallow pillows and the fudge room.</p>
       </section>
-      <section id='events'></section>
-      <div className='underline_container'>
-        <div className='colour_one_box'></div>
-        <div className='colour_two_box'></div>
-        <div className='colour_one_box'></div>
-        <div className='colour_two_box'></div>
-      </div>
-      <h1>A little <span>NONSENSE</span> now and then is relished by the <span>WISEST</span> men</h1>
-      <div className='subheader_container'>
-        <h1>FACTORY <span>EVENTS</span></h1>
-      </div>
-      {/* events box */}
+      <section id='events'>
+        <img src={eventsBg} alt='Chocolate Room' id='events_bg' />
+        <div className='underline_container'>
+          <div className='colour_one_box'></div>
+          <div className='colour_two_box'></div>
+          <div className='colour_one_box'></div>
+          <div className='colour_two_box'></div>
+        </div>
+        <div className='slogan_container'>
+          <h1 className='slogan_top'>A little <span>NONSENSE</span><br /> now and then</h1>
+          <div className='underline_container'>
+            <div className='colour_one_box'></div>
+            <div className='colour_two_box'></div>
+          </div>
+          <h1 className='slogan_bottom'>is relished by the<br /><span>WISEST</span> men</h1>
+        </div>
+        <div>
+          <div className='subheader_container'>
+            <h1>FACTORY <span>EVENTS</span></h1>
+          </div>
+        </div>
+        {/* events box */}
+      </section>
       <section id='social'>
         <div className='subheader_container'>
           <h1>WONKA'S <span>TWITTER</span></h1>
