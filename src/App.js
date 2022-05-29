@@ -158,14 +158,15 @@ function App() {
           to other rooms in the factory via a dark tunnel.</p>
         <p>The river leads directly between the Chocolate Room and edible marshmallow pillows and the fudge room.</p>
       </section>
+      <div className='underline_container'>
+        <div className='colour_one_box'></div>
+        <div className='colour_two_box'></div>
+        <div className='colour_one_box'></div>
+        <div className='colour_two_box'></div>
+      </div>
       <section id='events'>
+
         <img src={eventsBg} alt='Chocolate Room' id='events_bg' />
-        <div className='underline_container'>
-          <div className='colour_one_box'></div>
-          <div className='colour_two_box'></div>
-          <div className='colour_one_box'></div>
-          <div className='colour_two_box'></div>
-        </div>
         <div className='slogan_container'>
           <h1 className='slogan_top'>A little <span>NONSENSE</span><br /> now and then</h1>
           <div className='underline_container'>
@@ -174,12 +175,47 @@ function App() {
           </div>
           <h1 className='slogan_bottom'>is relished by the<br /><span>WISEST</span> men</h1>
         </div>
-        <div>
+
+        <div className='events_container'>
           <div className='subheader_container'>
             <h1>FACTORY <span>EVENTS</span></h1>
           </div>
+          <div className='event_container'>
+            <div className='date_container'>
+              <h1>5</h1>
+              <p>June</p>
+            </div>
+            <div className='event_title_container'>
+              <p>Golden Ticket Release Date</p>
+              <div className='underline_container'>
+                <div className='colour_one_box'></div>
+                <div className='colour_two_box'></div>
+              </div>
+            </div>
+          </div>
+          <div className='event_container'>
+            <div className='date_container'>
+              <h1>8</h1>
+              <p>Aug</p>
+            </div>
+            <div className='event_title_container'>
+              <p>2022 Tour</p>
+              <div className='underline_container'>
+                <div className='colour_one_box'></div>
+                <div className='colour_two_box'></div>
+              </div>
+            </div>
+          </div>
+          <div className='subheader_container'>
+            <div>
+              <p>VIEW ALL EVENTS</p>
+              <div className='underline_container'>
+                <div className='colour_two_box'></div>
+              </div>
+            </div>
+          </div>
         </div>
-        {/* events box */}
+
       </section>
       <section id='social'>
         <div className='subheader_container'>

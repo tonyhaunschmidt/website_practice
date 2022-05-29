@@ -100,6 +100,7 @@ header{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding: 50px;
   #events_bg{
     min-height: 100vh;
     min-width: 100vw;
@@ -110,7 +111,6 @@ header{
   .slogan_container{
     color: white;
     text-align: center;
-    margin: 0 0 0 50px;
     min-width: 284px;
     .underline_container{
       padding: 0 20px 0 20px;
@@ -126,6 +126,39 @@ header{
     span{
       font-weight: bolder;
       font-size: larger;
+    }
+  }
+  .events_container{
+    background-color: rgba(255, 255 ,255 ,0.85);
+    padding: 50px;
+    flex-grow: 1;
+    margin: 30px;
+    border-radius: 15px;
+    .event_container{
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 20px;
+      .date_container{
+        background-color: $main-one;
+        color: white;
+        border-radius: 15px;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 30px;
+        h1{
+          margin: 0;
+        }
+        p{
+          margin: 0;
+        }
+      }  
+    }
+    .event_title_container{
+      flex-grow: 1;
     }
   }
 }
