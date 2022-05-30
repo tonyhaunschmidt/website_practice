@@ -335,15 +335,17 @@ function App() {
       </section>
       <section id='gallery'>
         <div className='section_container'>
-          <div className='subheader_container'>
-            <h1>WONKA'S <span>GALLERY</span></h1>
-            <div>
-              <p>VIEW ALL GALLERIES</p>
-              <div className='underline_container'>
-                <div className='colour_two_box'></div>
+          <a href='#'>
+            <div className='subheader_container'>
+              <h1>WONKA'S <span>GALLERY</span></h1>
+              <div>
+                <p>VIEW ALL GALLERIES</p>
+                <div className='underline_container'>
+                  <div className='colour_two_box'></div>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
           <div className='cards_container'>
             <div className='card_container'>
               <Card className="bg-dark text-white">
@@ -363,7 +365,7 @@ function App() {
 
 
 
-      </section>
+      </section >
       <section id='map'>
         <div className='map_container'>
           <Map
@@ -439,7 +441,7 @@ function App() {
               </div>
             </div>
             <p>Willy Wonka's Chocolate Factory is proud to be part of the British Chocolate Association.</p>
-            <img src={logo} alt='BCA badge' className='bca' />
+            <a href='#' className='bca'><img src={logo} alt='BCA badge' /></a>
             <hr />
           </div>
         </div>
