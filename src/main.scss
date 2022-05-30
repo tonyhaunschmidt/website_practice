@@ -368,12 +368,27 @@ header{
 }
 
 #map{
-  height: 300px;
+  height: 350px;
   .map_container{
     height: 100%;
     width: 100%;
   }
   
+}
+
+#accreditations{
+  .section_container{
+    background-color: $main-one;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+    bottom: 80px;
+    .accred{
+      height: 100px;
+    }
+  }
 }
 
 #contact{
@@ -405,6 +420,10 @@ header{
     
     hr{
       width: 100%;
+    }
+    .bca{
+      height: 100px;
+      margin: 0 auto;
     }
   }
   }

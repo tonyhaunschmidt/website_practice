@@ -383,7 +383,13 @@ function App() {
       </section>
       <section id='accreditations'>
         <div className='section_container'>
-
+          <img src={logo} alt='badge' className='accred' />
+          <img src={logo} alt='badge' className='accred' />
+          <img src={logo} alt='badge' className='accred' />
+          <img src={logo} alt='badge' className='accred' />
+          <img src={logo} alt='badge' className='accred' />
+          <img src={logo} alt='badge' className='accred' />
+          <img src={logo} alt='badge' className='accred' />
         </div>
       </section>
       <section id='contact'>
@@ -433,11 +439,10 @@ function App() {
               </div>
             </div>
             <p>Willy Wonka's Chocolate Factory is proud to be part of the British Chocolate Association.</p>
-            {/*<img />*/}
+            <img src={logo} alt='BCA badge' className='bca' />
             <hr />
           </div>
         </div>
-
       </section>
       <footer>
         <div className='section_container'>
