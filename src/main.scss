@@ -131,6 +131,11 @@ header{
       .underline_container{
         margin-bottom: 0;
       }
+      .nav-link:hover{
+        color: $main-one;
+        border-bottom: 5px solid $main-two;
+      }
+      
     }
   }  
 }
