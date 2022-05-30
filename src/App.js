@@ -10,6 +10,8 @@ import Card from 'react-bootstrap/Card'
 //import Offcanvas from 'react-bootstrap/Offcanvas'
 //import Button from 'react-bootstrap/Button'
 
+import Slider from "react-slick"
+
 import logo from './assets/logo.png'
 import heroOne from './assets/hero_one.webp'
 import heroTwo from './assets/hero_two.webp'
@@ -26,6 +28,41 @@ function App() {
       top: elementRef.current.offsetTop,
       behavior: 'smooth'
     })
+  }
+
+  var sliderSettings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   }
 
 
@@ -229,6 +266,32 @@ function App() {
             </div>
           </div>
         </div>
+        <Slider {...sliderSettings}>
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+          <div>
+            <h3>7</h3>
+          </div>
+          <div>
+            <h3>8</h3>
+          </div>
+        </Slider>
       </section>
       <section id='gallery'>
         <div className='subheader_container'>
