@@ -87,7 +87,7 @@ h2{
 header{
   width: 100%;
   position: fixed;
-  z-index: 20;
+  z-index: 200;
   box-shadow: 0 0 10px grey;
   .section_container{
     display: flex;
@@ -521,6 +521,7 @@ header{
   .section_container{
     display: flex;
   justify-content: space-evenly;
+  padding-bottom: 40px;
   .contact_info{
     width: 30%;
     display: flex;
@@ -548,7 +549,9 @@ header{
     }
     
     hr{
-      width: 100%;
+      width: 85%;
+      margin: 20px auto 40px 0;
+      display: none;
     }
     .bca{
       margin: 0 auto;
@@ -565,6 +568,7 @@ header{
 
 footer{
   background-color: $main-one;
+  text-align: center;
   .section_container{
     display: flex;
   flex-wrap: wrap;
@@ -587,6 +591,162 @@ footer{
       margin-right: 20px;
     }
   }
+  
+  }
+  .staff_login, .parent_login{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px){
+
+  .section_container{
+    width: 90%;
+  }
+
+  #hero{
+    .carousel{
+      h2{
+        font-size: 30px;
+      }
+      h4{
+        display: none;
+      }
+    }
+  }
+
+  #welcome{
+    img{
+      display: none;
+    }
+  }
+
+  #accreditations{
+    .section_container{
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 30px;
+      border-radius: 15px;
+      position: initial;
+      .accred{
+        height: 150px;
+        margin: 30px;
+      }
+    }
+    
+  }
+
+  #contact{
+    .section_container{
+      flex-direction: column;
+      .contact_info{
+        width: 100%;
+        hr{
+          display: initial;
+
+        }
+      }
+    }
+    
+  }
+
+
+footer{
+  .small_staff_login, .small_parent_login{
+    display: none;
+  }
+  .staff_login, .parent_login{
+    display: block;
+    padding: 10px;
+    a{
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline white;
+      }
+    }
+    h5{
+      text-align: center;
+      color: white;
+    }
+}
+  .staff_login{
+    background-color: black;
+  }
+  .parent_login{
+    background-color: gray;
+  }
+}
+}
+
+@media screen and (max-width: 768px){
+
+  #hero{
+    h2{
+      display: none;
+    }
+  }
+
+  .subheader_container{
+    h1{
+      font-size: 40px;
+      span{
+        margin-top: -10px;
+      }
+    }
+    p{
+      display: none;
+    }
+  }
+  #events{
+    p{
+      display: initial;
+    }
+    .section_container{
+      padding-left: 0;
+      padding-right: 0;
+      .slogan_container{
+        .slogan_top{
+          right: 10px;
+        }
+        h1{
+          font-size: 30px;
+        }
+      }
+      .events_container{
+      width: 100%;
+      margin: 0;
+    }
+  }
+  }
+
+  #gallery{
+    a{
+      width: 100vw;
+      
+    }
+    .cards_container{
+      .card_container{
+        width: 100vw;
+        max-width: 100vw;
+      }
+        
+        .card{
+          width: 100%;
+        }
+      }
+  }
+
+  #accreditations{
+    .section_container{
+      .accred{
+    height: 80px;
+    margin: 20px;
+  }
+    }
+    
   }
   
+
 }

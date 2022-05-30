@@ -248,7 +248,7 @@ function App() {
                   <p>June</p>
                 </div>
                 <div className='event_title_container'>
-                  <p>Golden Ticket Release Date</p>
+                  <p>Golden Ticket Release</p>
                   <div className='underline_container_changer'>
                     <div className='colour_one_box_changer'></div>
                   </div>
@@ -549,18 +549,23 @@ function App() {
             </div>
             <p>Willy Wonka's Chocolate Factory is proud to be part of the British Chocolate Association.</p>
             <a href='#' className='bca'><img src={logo} alt='BCA badge' /></a>
-            <hr />
           </div>
         </div>
       </section>
       <footer>
+        <div className='staff_login'>
+          <a href='#'><h5>STAFF LOGIN</h5></a>
+        </div>
+        <div className='parent_login'>
+          <a href='#'><h5>PARENT LOGIN</h5></a>
+        </div>
         <div className='section_container'>
           <p><small>&copy; Willy Wonka's Chocolate Factory. All Rights Reserved. Website by <a href='https://www.tonyhaunschmidt.com/'>Tony Haunschmidt</a>.</small></p>
           <ul>
             <a href="#"><li><small>Website Policy</small></li></a>
             <a href="#"><li><small>Cookies Policy</small></li></a>
-            <a href="#"><li><small>Login</small></li></a> {/*hide and have another section above that is unhid */}
-            <a href="#"><li><span class="material-symbols-outlined">lock</span></li></a>
+            <a href="#" className='small_parent_login'><li><small>Login</small></li></a> {/*hide and have another section above that is unhid */}
+            <a href="#" className='small_staff_login'><li><span class="material-symbols-outlined">lock</span></li></a>
           </ul>
         </div>
 
