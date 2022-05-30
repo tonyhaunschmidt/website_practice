@@ -247,9 +247,8 @@ function App() {
               </div>
               <div className='event_title_container'>
                 <p>Golden Ticket Release Date</p>
-                <div className='underline_container'>
-                  <div className='colour_one_box'></div>
-                  <div className='colour_two_box'></div>
+                <div className='underline_container_changer'>
+                  <div className='colour_one_box_changer'></div>
                 </div>
               </div>
             </div>
@@ -262,9 +261,8 @@ function App() {
               </div>
               <div className='event_title_container'>
                 <p>2022 Tour</p>
-                <div className='underline_container'>
-                  <div className='colour_one_box'></div>
-                  <div className='colour_two_box'></div>
+                <div className='underline_container_changer'>
+                  <div className='colour_one_box_changer'></div>
                 </div>
               </div>
             </div>
@@ -282,15 +280,17 @@ function App() {
         </div>
       </section>
       <section id='social'>
-        <div className='subheader_container'>
-          <h1>WONKA'S <span>TWITTER</span></h1>
-          <div>
-            <p>SEE OUT LATEST TWEETS</p>
-            <div className='underline_container'>
-              <div className='colour_two_box'></div>
+        <a href='#'>
+          <div className='subheader_container'>
+            <h1>WONKA'S <span>TWITTER</span></h1>
+            <div>
+              <p>SEE OUT LATEST TWEETS</p>
+              <div className='underline_container'>
+                <div className='colour_two_box'></div>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <Slider {...sliderSettings}>
           <div>
             <h3><Card className="bg-dark text-white">
@@ -338,7 +338,9 @@ function App() {
             <Card className="bg-dark text-white">
               <Card.Img src={heroOne} alt="Card image" />
               <Card.ImgOverlay>
-                <Card.Title>1971 Tour</Card.Title>
+                <div className='overlay_container'>
+                  <Card.Title>1971 Tour</Card.Title>
+                </div>
               </Card.ImgOverlay>
             </Card>
             <div className='underline_container'>

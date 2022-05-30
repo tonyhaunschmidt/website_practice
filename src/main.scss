@@ -187,6 +187,25 @@ header{
       display: flex;
       align-items: flex-end;
       margin-bottom: 20px;
+      .event_title_container{
+        flex-grow: 1;
+        color: $main-one;
+        .underline_container_changer{
+          background-color: $main-two;
+          height: 8px;
+          .colour_one_box_changer{
+            width: 0;
+            height: 8px;
+            background-color: $main-one;
+            transition: width 0.5s;
+            -webkit-transition: width 0.5s;
+            -moz-transition: width 0.5s;
+          }
+        }
+        p{
+          font-size: larger;
+        }
+      }
       .date_container{
         background-color: $main-one;
         color: white;
@@ -198,6 +217,9 @@ header{
         flex-direction: column;
         justify-content: center;
         margin-right: 30px;
+        transition: color 0.5s;
+        -webkit-transition: color 0.5s;
+        -moz-transition: color 0.5s;
         h1{
           margin: 0;
         }
@@ -206,30 +228,58 @@ header{
         }
       
       }  
+      
       &:hover{
         .date_container{
           color: grey;
         }
+        .event_title_container{
+          .underline_container_changer{
+            .colour_one_box_changer{
+              width: 100%;
+            }
+          }
+        }
       }
     }
-    .event_title_container{
-      flex-grow: 1;
-      color: $main-one;
-      p{
-        font-size: larger;
-      }
-    }
+    
   }
 }
 
 #social{
   background-color: $main-one;
   color: #fff;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    &:hover{
+      color: gray;
+      h1{
+        color: gray;
+        span{
+          color: gray;
+        }
+      }
+    }
+  }
   .subheader_container{
+    
     h1{
       color: white;
+      transition: color 0.5s;
+      -webkit-transition: color 0.5s;
+      -moz-transition: color 0.5s;
       span{
         color: white;
+        transition: color 0.5s;
+        -webkit-transition: color 0.5s;
+        -moz-transition: color 0.5s;
       }
     }
   }
@@ -258,13 +308,35 @@ header{
       .card{
         border-radius: 0;
         .card-img-overlay{
+          padding: 0;
+          width: 100%;
           display: flex;
-          justify-content: center;
-          align-items: center;
+          flex-direction: column-reverse;
+          .overlay_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 0;
+            background-color: $main-one;
+            bottom: 100;
+            transition: height 0.5s;
+            -webkit-transition: height 0.5s;
+            -moz-transition: height 0.5s;
+            .card-title{
+              color: rgba(0,0,0,0);
+              transition: color 0.5s;
+              -webkit-transition: color 0.5s;
+              -moz-transition: color 0.5s;
+            }
+          }
+          
         }
       &:hover{
-        .card-img-overlay{
-          background-color: $main-one;
+        .overlay_container{
+          height: 100%;
+          .card-title{
+            color: white;
+          }
         }
       }
     }
