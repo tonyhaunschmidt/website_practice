@@ -375,6 +375,9 @@ header{
           font-size: xx-large;
           text-shadow: 0 1px 0 black;
         }
+        p{
+          height: 100px;
+        }
       }
       padding: 0;
       width: 100%;
@@ -467,6 +470,9 @@ header{
       max-width: 450px;
       .card{
         border-radius: 0;
+        .card-img{
+          max-height: none;
+        }
         .card-img-overlay{
           padding: 0;
           width: 100%;
@@ -547,6 +553,9 @@ header{
       color: $main-one;
       font-weight: bold;
     }
+    .underline_container{
+      margin-bottom: 20px;
+    }
     a{
       text-decoration: none;
       color: grey;
@@ -571,7 +580,7 @@ header{
     .bca{
       margin: 0 auto;
       img{
-        height: 100px;
+        height: 200px;
       }
       
       
@@ -694,7 +703,7 @@ footer{
   #contact{
     .section_container{
       flex-direction: column;
-      .contact_info{
+      .contact_info{ 
         width: 100%;
         hr{
           display: initial;

@@ -16,8 +16,22 @@ import logo from './assets/logo.png'
 import heroOne from './assets/hero_one.webp'
 import heroTwo from './assets/hero_two.webp'
 import heroThree from './assets/hero_three.webp'
-
 import eventsBg from './assets/events_bg.jpeg'
+import tweetOne from './assets/tweet_one.jpeg'
+import tweetTwo from './assets/tweet_two.avif'
+import tweetThree from './assets/tweet_three.jpeg'
+import tweetFour from './assets/tweet_four.jpeg'
+import tweetFive from './assets/tweet_five.jpeg'
+import tweetSix from './assets/tweet_six.jpeg'
+import galleryPic from './assets/gallery.jpeg'
+import badgeOne from './assets/badge_one.png'
+import badgeTwo from './assets/badge_two.png'
+import badgeThree from './assets/badge_three.webp'
+import badgeFour from './assets/badge_four.png'
+import badgeFive from './assets/badge_five.png'
+import badgeSix from './assets/badge_six.png'
+import badgeSeven from './assets/badge_seven.png'
+import bca from './assets/bca.webp'
 
 function App() {
 
@@ -49,7 +63,7 @@ function App() {
         }
       },
       {
-        breakpoint: 800,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -299,10 +313,10 @@ function App() {
           <Slider {...sliderSettings}>
             <div>
               <Card className="bg-dark text-white">
-                <Card.Img src={heroOne} alt="Card image" />
+                <Card.Img src={tweetOne} alt="Card image" />
                 <Card.ImgOverlay>
                   <div className='text_over_image'>
-                    <h3>30 May, 2022</h3>
+                    <h3>31 May, 2022</h3>
                     <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
                   </div>
                 </Card.ImgOverlay>
@@ -312,7 +326,7 @@ function App() {
                       <img src={logo} alt='twitter profile pic' />
                       <div className='tweet_info'>
                         <p className='tweet_name'>Wonka's Chocolate</p>
-                        <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
+                        <p><a href='#' >@WonkaChoco</a> 31 May, 2022</p>
                       </div>
                     </div>
                     <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be small traces of human in the next batch of chocolate. Please get in touch if you have any allergic reactions.</p>
@@ -322,10 +336,10 @@ function App() {
             </div>
             <div>
               <Card className="bg-dark text-white">
-                <Card.Img src={heroOne} alt="Card image" />
+                <Card.Img src={tweetTwo} alt="Card image" />
                 <Card.ImgOverlay>
                   <div className='text_over_image'>
-                    <h3>30 May, 2022</h3>
+                    <h3>31 May, 2022</h3>
                     <p>Exciting new things being cooked up in the inventing room. They're just not..</p>
                   </div>
                 </Card.ImgOverlay>
@@ -335,7 +349,7 @@ function App() {
                       <img src={logo} alt='twitter profile pic' />
                       <div className='tweet_info'>
                         <p className='tweet_name'>Wonka's Chocolate</p>
-                        <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
+                        <p><a href='#' >@WonkaChoco</a> 31 May, 2022</p>
                       </div>
                     </div>
                     <p>Exciting new things being cooked up in the inventing room. They're just not ready quite yet. Unless you want to be a blueberry...</p>
@@ -345,10 +359,10 @@ function App() {
             </div>
             <div>
               <Card className="bg-dark text-white">
-                <Card.Img src={heroOne} alt="Card image" />
+                <Card.Img src={tweetThree} alt="Card image" />
                 <Card.ImgOverlay>
                   <div className='text_over_image'>
-                    <h3>30 May, 2022</h3>
+                    <h3>25 May, 2022</h3>
                     <p>If You Want To View Paradise, Simply Look Around And View It.</p>
                   </div>
                 </Card.ImgOverlay>
@@ -358,7 +372,7 @@ function App() {
                       <img src={logo} alt='twitter profile pic' />
                       <div className='tweet_info'>
                         <p className='tweet_name'>Wonka's Chocolate</p>
-                        <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
+                        <p><a href='#' >@WonkaChoco</a> 25 May, 2022</p>
                       </div>
                     </div>
                     <p>If You Want To View Paradise, Simply Look Around And View It.</p>
@@ -368,10 +382,10 @@ function App() {
             </div>
             <div>
               <Card className="bg-dark text-white">
-                <Card.Img src={heroOne} alt="Card image" />
+                <Card.Img src={tweetFour} alt="Card image" />
                 <Card.ImgOverlay>
                   <div className='text_over_image'>
-                    <h3>30 May, 2022</h3>
+                    <h3>22 May, 2022</h3>
                     <p>If The Good Lord Had Intended Us To Walk He Wouldn't Have Invented Roller Skates.</p>
                   </div>
                 </Card.ImgOverlay>
@@ -381,7 +395,7 @@ function App() {
                       <img src={logo} alt='twitter profile pic' />
                       <div className='tweet_info'>
                         <p className='tweet_name'>Wonka's Chocolate</p>
-                        <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
+                        <p><a href='#' >@WonkaChoco</a> 22 May, 2022</p>
                       </div>
                     </div>
                     <p>If The Good Lord Had Intended Us To Walk He Wouldn't Have Invented Roller Skates.</p>
@@ -391,10 +405,10 @@ function App() {
             </div>
             <div>
               <Card className="bg-dark text-white">
-                <Card.Img src={heroOne} alt="Card image" />
+                <Card.Img src={tweetFive} alt="Card image" />
                 <Card.ImgOverlay>
                   <div className='text_over_image'>
-                    <h3>30 May, 2022</h3>
+                    <h3>18 May, 2022</h3>
                     <p>We Are The Music Makers And We Are The Dreamers Of The Dreams.</p>
                   </div>
                 </Card.ImgOverlay>
@@ -404,7 +418,7 @@ function App() {
                       <img src={logo} alt='twitter profile pic' />
                       <div className='tweet_info'>
                         <p className='tweet_name'>Wonka's Chocolate</p>
-                        <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
+                        <p><a href='#' >@WonkaChoco</a> 18 May, 2022</p>
                       </div>
                     </div>
                     <p>We Are The Music Makers And We Are The Dreamers Of The Dreams.</p>
@@ -414,10 +428,10 @@ function App() {
             </div>
             <div>
               <Card className="bg-dark text-white">
-                <Card.Img src={heroOne} alt="Card image" />
+                <Card.Img src={tweetSix} alt="Card image" />
                 <Card.ImgOverlay>
                   <div className='text_over_image'>
-                    <h3>30 May, 2022</h3>
+                    <h3>7 May, 2022</h3>
                     <p>Where is fancy bred? In the heart or in the head?</p>
                   </div>
                 </Card.ImgOverlay>
@@ -427,7 +441,7 @@ function App() {
                       <img src={logo} alt='twitter profile pic' />
                       <div className='tweet_info'>
                         <p className='tweet_name'>Wonka's Chocolate</p>
-                        <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
+                        <p><a href='#' >@WonkaChoco</a> 7 May, 2022</p>
                       </div>
                     </div>
                     <p>Where is fancy bred? In the heart or in the head?</p>
@@ -455,7 +469,7 @@ function App() {
             <a href='#'>
               <div className='card_container'>
                 <Card className="bg-dark text-white">
-                  <Card.Img src={heroOne} alt="Card image" />
+                  <Card.Img src={galleryPic} alt="Card image" />
                   <Card.ImgOverlay>
                     <div className='overlay_container'>
                       <Card.Title>Gallery</Card.Title>
@@ -492,13 +506,13 @@ function App() {
       </section>
       <section id='accreditations'>
         <div className='section_container'>
-          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
-          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
-          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
-          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
-          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
-          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
-          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
+          <a href='#'><img src={badgeOne} alt='icco' className='accred' /></a>
+          <a href='#'><img src={badgeTwo} alt='apc' className='accred' /></a>
+          <a href='#'><img src={badgeThree} alt='wonka' className='accred' /></a>
+          <a href='#'><img src={badgeFour} alt='ppc' className='accred' /></a>
+          <a href='#'><img src={badgeFive} alt='choco' className='accred' /></a>
+          <a href='#'><img src={badgeSix} alt='wrapper' className='accred' /></a>
+          <a href='#'><img src={badgeSeven} alt='wca' className='accred' /></a>
         </div>
       </section>
       <section id='contact'>
@@ -548,7 +562,7 @@ function App() {
               </div>
             </div>
             <p>Willy Wonka's Chocolate Factory is proud to be part of the British Chocolate Association.</p>
-            <a href='#' className='bca'><img src={logo} alt='BCA badge' /></a>
+            <a href='#' className='bca'><img src={bca} alt='BCA badge' /></a>
           </div>
         </div>
       </section>
