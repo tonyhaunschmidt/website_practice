@@ -33,6 +33,8 @@ import badgeSix from './assets/badge_six.png'
 import badgeSeven from './assets/badge_seven.png'
 import bca from './assets/bca.webp'
 
+
+
 function App() {
 
   const welcome = useRef(null)
