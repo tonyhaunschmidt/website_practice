@@ -25,7 +25,7 @@ function App() {
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop,
+      top: elementRef.current.offsetTop - 90,
       behavior: 'smooth'
     })
   }
@@ -37,6 +37,7 @@ function App() {
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -76,7 +77,7 @@ function App() {
         </div>
         <Navbar bg="light" expand="lg">
           <Container>
-            <Navbar.Brand href="#home">MENU</Navbar.Brand> {/* hide at certain size */}
+            {/*<Navbar.Brand href="#home">MENU</Navbar.Brand> {/* hide at certain size */}
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
@@ -91,6 +92,9 @@ function App() {
                   <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
                   <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
                   <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                  <div className='underline_container'>
+                    <div className='colour_two_box'></div>
+                  </div>
                 </NavDropdown>
                 <NavDropdown title="Key Information" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
@@ -102,6 +106,9 @@ function App() {
                   <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
                   <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
                   <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                  <div className='underline_container'>
+                    <div className='colour_two_box'></div>
+                  </div>
                 </NavDropdown>
                 <NavDropdown title="Our Factory" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
@@ -113,6 +120,9 @@ function App() {
                   <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
                   <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
                   <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                  <div className='underline_container'>
+                    <div className='colour_two_box'></div>
+                  </div>
                 </NavDropdown>
                 <NavDropdown title="Chocolates" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
@@ -124,6 +134,9 @@ function App() {
                   <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
                   <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
                   <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                  <div className='underline_container'>
+                    <div className='colour_two_box'></div>
+                  </div>
                 </NavDropdown>
                 <NavDropdown title="Virtual Office" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
@@ -135,6 +148,9 @@ function App() {
                   <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
                   <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
                   <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                  <div className='underline_container'>
+                    <div className='colour_two_box'></div>
+                  </div>
                 </NavDropdown>
                 <Nav.Link href="#">Contact</Nav.Link>
               </Nav>
@@ -186,6 +202,10 @@ function App() {
         {/*<img />*/}
         <h1><span id='welcome_to'>WELCOME TO</span><br />Willy Wonka's Cholocolate Factory</h1>
         <div className='underline_container'><div className='colour_one'></div><div className='colour_two'></div></div>
+        <div className='underline_container'>
+          <div className='colour_one_box'></div>
+          <div className='colour_two_box'></div>
+        </div>
         <p>Wonka is reopening the factory to the public and has invited five lucky children to come on a tour after they find five Golden Tickets in five Wonka Bars.
           It appears as a chocolate factory, with "Wonka" written everywhere. It has red double doors, yellow walls and a brown space wherever "Wonka" is written.
           The double doors lead into a hexagon entrance, which go downstairs into the room leading up to the lobby entrance. Hats, coats, ect. are hung on golden
@@ -219,42 +239,47 @@ function App() {
           <div className='subheader_container'>
             <h1>FACTORY <span>EVENTS</span></h1>
           </div>
-          <div className='event_container'>
-            <div className='date_container'>
-              <h1>5</h1>
-              <p>June</p>
-            </div>
-            <div className='event_title_container'>
-              <p>Golden Ticket Release Date</p>
-              <div className='underline_container'>
-                <div className='colour_one_box'></div>
-                <div className='colour_two_box'></div>
+          <a href='#'>
+            <div className='event_container'>
+              <div className='date_container'>
+                <h1>5</h1>
+                <p>June</p>
+              </div>
+              <div className='event_title_container'>
+                <p>Golden Ticket Release Date</p>
+                <div className='underline_container'>
+                  <div className='colour_one_box'></div>
+                  <div className='colour_two_box'></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className='event_container'>
-            <div className='date_container'>
-              <h1>8</h1>
-              <p>Aug</p>
-            </div>
-            <div className='event_title_container'>
-              <p>2022 Tour</p>
-              <div className='underline_container'>
-                <div className='colour_one_box'></div>
-                <div className='colour_two_box'></div>
+          </a>
+          <a href='#'>
+            <div className='event_container'>
+              <div className='date_container'>
+                <h1>8</h1>
+                <p>Aug</p>
+              </div>
+              <div className='event_title_container'>
+                <p>2022 Tour</p>
+                <div className='underline_container'>
+                  <div className='colour_one_box'></div>
+                  <div className='colour_two_box'></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className='subheader_container'>
-            <div>
-              <p>VIEW ALL EVENTS</p>
-              <div className='underline_container'>
-                <div className='colour_two_box'></div>
+          </a>
+          <a href='#'>
+            <div className='subheader_container'>
+              <div>
+                <p>VIEW ALL EVENTS</p>
+                <div className='underline_container'>
+                  <div className='colour_two_box'></div>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
-
       </section>
       <section id='social'>
         <div className='subheader_container'>
@@ -268,7 +293,12 @@ function App() {
         </div>
         <Slider {...sliderSettings}>
           <div>
-            <h3>1</h3>
+            <h3><Card className="bg-dark text-white">
+              <Card.Img src={heroOne} alt="Card image" />
+              <Card.ImgOverlay>
+                <Card.Title>1971 Tour</Card.Title>
+              </Card.ImgOverlay>
+            </Card></h3>
           </div>
           <div>
             <h3>2</h3>
