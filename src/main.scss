@@ -114,13 +114,22 @@ header{
     .navbar{
       //flex-grow: 1;
       background-color: white;
-      .navbar-collapse{
-        justify-content: end;
+      //.navbar-collapse{
+      //  justify-content: end;
+      //}
+      //.dropdown-toggle{
+      //  &::after{
+      //    display: none
+      //  }
+      //}
+      .navbar-brand{
+        display: none;
       }
-      .dropdown-toggle{
-        &::after{
-          display: none
-        }
+      .dropdown-menu{
+        padding-bottom: 0;
+      }
+      .underline_container{
+        margin-bottom: 0;
       }
     }
   }  
@@ -140,6 +149,7 @@ header{
       }
     }
     h4{
+      font-size: 30px;
       .material-symbols-outlined{
         font-size: 60px;
         &:hover{
@@ -600,11 +610,49 @@ footer{
 
 @media screen and (max-width: 1024px){
 
+  header{
+    position: static;
+    .section_container{
+      flex-direction: column-reverse;
+      height: 100%;
+      width: 100%;
+      #logo_title_container{
+        min-width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px;
+        .logo{
+          height: 120px;
+        }
+        h3{
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+      .navbar{
+        //width: 10px;
+        color: white;
+        .container{
+          justify-content: start;
+        }
+        .navbar-brand{
+          display: initial;
+          color: white;
+        }
+      }
+      .navbar, .navbar-extend-lg, .navbar-light, .bg-light, .dropdown-menu, .navbar-nav, .nav-link, .dropdown-item{
+        background-color: $main-one !important;
+        color: white !important;
+      }
+    }
+  }
+
   .section_container{
     width: 90%;
   }
 
   #hero{
+    padding-top: 0;
     .carousel{
       h2{
         font-size: 30px;

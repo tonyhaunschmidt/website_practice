@@ -71,7 +71,7 @@ function App() {
           </div>
           <Navbar bg="light" expand="lg">
             <Container>
-              {/*<Navbar.Brand href="#home">MENU</Navbar.Brand> {/* hide at certain size */}
+              <Navbar.Brand href="#home">MENU</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
