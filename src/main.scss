@@ -166,6 +166,29 @@ header{
   }
 }
 
+#gallery{
+  .cards_container{
+    display: flex;
+    justify-content: center;
+    .card_container{
+      width: 50%;
+      .card{
+        border-radius: 0;
+        .card-img-overlay{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      &:hover{
+        .card-img-overlay{
+          background-color: $main-one;
+        }
+      }
+    }
+  }
+  }
+}
+
 #map{
   height: 300px;
   .map_container{

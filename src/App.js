@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Carousel from 'react-bootstrap/Carousel'
+import Card from 'react-bootstrap/Card'
 //import Offcanvas from 'react-bootstrap/Offcanvas'
 //import Button from 'react-bootstrap/Button'
 
@@ -239,7 +240,21 @@ function App() {
             </div>
           </div>
         </div>
-        {/*card - with overlay */}
+        <div className='cards_container'>
+          <div className='card_container'>
+            <Card className="bg-dark text-white">
+              <Card.Img src={heroOne} alt="Card image" />
+              <Card.ImgOverlay>
+                <Card.Title>1971 Tour</Card.Title>
+              </Card.ImgOverlay>
+            </Card>
+            <div className='underline_container'>
+              <div className='colour_two_box'></div>
+            </div>
+          </div>
+        </div>
+
+
       </section>
       <section id='map'>
         <div className='map_container'>
