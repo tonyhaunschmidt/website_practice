@@ -34,16 +34,16 @@ function App() {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     initialSlide: 0,
     arrows: false,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
           dots: true
         }
@@ -51,9 +51,9 @@ function App() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0
         }
       },
       {
@@ -302,37 +302,146 @@ function App() {
           </a>
           <Slider {...sliderSettings}>
             <div>
-              <h3><Card className="bg-dark text-white">
+              <Card className="bg-dark text-white">
                 <Card.Img src={heroOne} alt="Card image" />
                 <Card.ImgOverlay>
-                  <Card.Title>Gallery</Card.Title>
+                  <div className=''>
+                    <h3>30 May, 2022</h3>
+                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
+                  </div>
                 </Card.ImgOverlay>
-              </Card></h3>
+                <Card.ImgOverlay>
+                  <div className='overlay_container'>
+                    <div className='tweet_title_container'>
+                      <img src={logo} alt='twitter profile pic' />
+                      <div className='tweet_info'>
+                        <p className='tweet_name'>Wonka's Chocolate</p>
+                        <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
+                      </div>
+                    </div>
+                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be small traces of human in the next batch of chocolate. Please get in touch if you have any allergic reactions.</p>
+                  </div>
+                </Card.ImgOverlay>
+              </Card>
             </div>
             <div>
-              <h3>2</h3>
+              <Card className="bg-dark text-white">
+                <Card.Img src={heroOne} alt="Card image" />
+                <Card.ImgOverlay>
+                  <div className=''>
+                    <h3>30 May, 2022</h3>
+                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
+                  </div>
+                </Card.ImgOverlay>
+                <Card.ImgOverlay>
+                  <div className='overlay_container'>
+                    <div className='tweet_title_container'>
+                      <img src={logo} alt='twitter profile pic' />
+                      <div className='tweet_info'>
+                        <p className='tweet_name'>Wonka's Chocolate</p>
+                        <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
+                      </div>
+                    </div>
+                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be small traces of human in the next batch of chocolate. Please get in touch if you have any allergic reactions.</p>
+                  </div>
+                </Card.ImgOverlay>
+              </Card>
             </div>
             <div>
-              <h3>3</h3>
+              <Card className="bg-dark text-white">
+                <Card.Img src={heroOne} alt="Card image" />
+                <Card.ImgOverlay>
+                  <div className=''>
+                    <h3>30 May, 2022</h3>
+                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
+                  </div>
+                </Card.ImgOverlay>
+                <Card.ImgOverlay>
+                  <div className='overlay_container'>
+                    <div className='tweet_title_container'>
+                      <img src={logo} alt='twitter profile pic' />
+                      <div className='tweet_info'>
+                        <p className='tweet_name'>Wonka's Chocolate</p>
+                        <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
+                      </div>
+                    </div>
+                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be small traces of human in the next batch of chocolate. Please get in touch if you have any allergic reactions.</p>
+                  </div>
+                </Card.ImgOverlay>
+              </Card>
             </div>
             <div>
-              <h3>4</h3>
+              <Card className="bg-dark text-white">
+                <Card.Img src={heroOne} alt="Card image" />
+                <Card.ImgOverlay>
+                  <div className=''>
+                    <h3>30 May, 2022</h3>
+                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
+                  </div>
+                </Card.ImgOverlay>
+                <Card.ImgOverlay>
+                  <div className='overlay_container'>
+                    <div className='tweet_title_container'>
+                      <img src={logo} alt='twitter profile pic' />
+                      <div className='tweet_info'>
+                        <p className='tweet_name'>Wonka's Chocolate</p>
+                        <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
+                      </div>
+                    </div>
+                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be small traces of human in the next batch of chocolate. Please get in touch if you have any allergic reactions.</p>
+                  </div>
+                </Card.ImgOverlay>
+              </Card>
             </div>
             <div>
-              <h3>5</h3>
+              <Card className="bg-dark text-white">
+                <Card.Img src={heroOne} alt="Card image" />
+                <Card.ImgOverlay>
+                  <div className=''>
+                    <h3>30 May, 2022</h3>
+                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
+                  </div>
+                </Card.ImgOverlay>
+                <Card.ImgOverlay>
+                  <div className='overlay_container'>
+                    <div className='tweet_title_container'>
+                      <img src={logo} alt='twitter profile pic' />
+                      <div className='tweet_info'>
+                        <p className='tweet_name'>Wonka's Chocolate</p>
+                        <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
+                      </div>
+                    </div>
+                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be small traces of human in the next batch of chocolate. Please get in touch if you have any allergic reactions.</p>
+                  </div>
+                </Card.ImgOverlay>
+              </Card>
             </div>
             <div>
-              <h3>6</h3>
-            </div>
-            <div>
-              <h3>7</h3>
-            </div>
-            <div>
-              <h3>8</h3>
+              <Card className="bg-dark text-white">
+                <Card.Img src={heroOne} alt="Card image" />
+                <Card.ImgOverlay>
+                  <div className=''>
+                    <h3>30 May, 2022</h3>
+                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
+                  </div>
+                </Card.ImgOverlay>
+                <Card.ImgOverlay>
+                  <div className='overlay_container'>
+                    <div className='tweet_title_container'>
+                      <img src={logo} alt='twitter profile pic' />
+                      <div className='tweet_info'>
+                        <p className='tweet_name'>Wonka's Chocolate</p>
+                        <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
+                      </div>
+                    </div>
+                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be small traces of human in the next batch of chocolate. Please get in touch if you have any allergic reactions.</p>
+                  </div>
+                </Card.ImgOverlay>
+              </Card>
             </div>
           </Slider>
         </div>
-      </section>
+      </section >
       <section id='gallery'>
         <div className='section_container'>
           <a href='#'>
@@ -385,13 +494,13 @@ function App() {
       </section>
       <section id='accreditations'>
         <div className='section_container'>
-          <img src={logo} alt='badge' className='accred' />
-          <img src={logo} alt='badge' className='accred' />
-          <img src={logo} alt='badge' className='accred' />
-          <img src={logo} alt='badge' className='accred' />
-          <img src={logo} alt='badge' className='accred' />
-          <img src={logo} alt='badge' className='accred' />
-          <img src={logo} alt='badge' className='accred' />
+          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
+          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
+          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
+          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
+          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
+          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
+          <a href='#'><img src={logo} alt='badge' className='accred' /></a>
         </div>
       </section>
       <section id='contact'>
