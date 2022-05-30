@@ -71,92 +71,95 @@ function App() {
   return (
     <>
       <header>
-        <div id='logo_title_container'> {/* add link to home */}
-          <img src={logo} alt='wonka_logo' className='logo' />
-          <h3><span>WILLY WONKA'S</span><br />CHOCOLATE FACTORY</h3>
+        <div className='section_container'>
+          <div id='logo_title_container'> {/* add link to home */}
+            <img src={logo} alt='wonka_logo' className='logo' />
+            <h3><span>WILLY WONKA'S</span><br />CHOCOLATE FACTORY</h3>
+          </div>
+          <Navbar bg="light" expand="lg">
+            <Container>
+              {/*<Navbar.Brand href="#home">MENU</Navbar.Brand> {/* hide at certain size */}
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                  <Nav.Link href="#">Home</Nav.Link>
+                  <NavDropdown title="Rooms" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                    <div className='underline_container'>
+                      <div className='colour_two_box'></div>
+                    </div>
+                  </NavDropdown>
+                  <NavDropdown title="Key Information" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                    <div className='underline_container'>
+                      <div className='colour_two_box'></div>
+                    </div>
+                  </NavDropdown>
+                  <NavDropdown title="Our Factory" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                    <div className='underline_container'>
+                      <div className='colour_two_box'></div>
+                    </div>
+                  </NavDropdown>
+                  <NavDropdown title="Chocolates" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                    <div className='underline_container'>
+                      <div className='colour_two_box'></div>
+                    </div>
+                  </NavDropdown>
+                  <NavDropdown title="Virtual Office" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
+                    <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
+                    <div className='underline_container'>
+                      <div className='colour_two_box'></div>
+                    </div>
+                  </NavDropdown>
+                  <Nav.Link href="#">Contact</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
         </div>
-        <Navbar bg="light" expand="lg">
-          <Container>
-            {/*<Navbar.Brand href="#home">MENU</Navbar.Brand> {/* hide at certain size */}
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#">Home</Nav.Link>
-                <NavDropdown title="Rooms" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
-                  <div className='underline_container'>
-                    <div className='colour_two_box'></div>
-                  </div>
-                </NavDropdown>
-                <NavDropdown title="Key Information" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
-                  <div className='underline_container'>
-                    <div className='colour_two_box'></div>
-                  </div>
-                </NavDropdown>
-                <NavDropdown title="Our Factory" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
-                  <div className='underline_container'>
-                    <div className='colour_two_box'></div>
-                  </div>
-                </NavDropdown>
-                <NavDropdown title="Chocolates" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
-                  <div className='underline_container'>
-                    <div className='colour_two_box'></div>
-                  </div>
-                </NavDropdown>
-                <NavDropdown title="Virtual Office" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#">Entrance</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Tunnels</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Chocolate</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Fear Tunnel</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Inventing Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Testing Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Fizzy Lifting Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Nut Room</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Wonkavision Studio</NavDropdown.Item>
-                  <div className='underline_container'>
-                    <div className='colour_two_box'></div>
-                  </div>
-                </NavDropdown>
-                <Nav.Link href="#">Contact</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
+
       </header>
       <section id='hero'>
         <div className='underline_container'>
@@ -199,23 +202,25 @@ function App() {
         </div>
       </section>
       <section id='welcome' ref={welcome}>
-        {/*<img />*/}
-        <h1><span id='welcome_to'>WELCOME TO</span><br />Willy Wonka's Cholocolate Factory</h1>
-        <div className='underline_container'><div className='colour_one'></div><div className='colour_two'></div></div>
-        <div className='underline_container'>
-          <div className='colour_one_box'></div>
-          <div className='colour_two_box'></div>
+        <div className='section_container'>
+          {/*<img />*/}
+          <h1><span id='welcome_to'>WELCOME TO</span><br />Willy Wonka's Cholocolate Factory</h1>
+          <div className='underline_container'><div className='colour_one'></div><div className='colour_two'></div></div>
+          <div className='underline_container'>
+            <div className='colour_one_box'></div>
+            <div className='colour_two_box'></div>
+          </div>
+          <p>Wonka is reopening the factory to the public and has invited five lucky children to come on a tour after they find five Golden Tickets in five Wonka Bars.
+            It appears as a chocolate factory, with "Wonka" written everywhere. It has red double doors, yellow walls and a brown space wherever "Wonka" is written.
+            The double doors lead into a hexagon entrance, which go downstairs into the room leading up to the lobby entrance. Hats, coats, ect. are hung on golden
+            hand-shaped coat hangers. When some of the children and parents hang their coats up they are in for a shock when the golden hands grab tightly onto coats
+            and hats, Wonka quoted the previously seen quote. The children then need to sign a curtain-guarded giant contract before going on.
+          </p>
+          <p>Wonka's favorite room, and debatably the most important in the factory. The room is a grassy meadow full of flowers and trees, with a chocolate river mixed
+            by waterfall that pipes into all the other rooms in the factory. Everything in the meadow is edible, and a boat ride down the chocolate river allows transit
+            to other rooms in the factory via a dark tunnel.</p>
+          <p>The river leads directly between the Chocolate Room and edible marshmallow pillows and the fudge room.</p>
         </div>
-        <p>Wonka is reopening the factory to the public and has invited five lucky children to come on a tour after they find five Golden Tickets in five Wonka Bars.
-          It appears as a chocolate factory, with "Wonka" written everywhere. It has red double doors, yellow walls and a brown space wherever "Wonka" is written.
-          The double doors lead into a hexagon entrance, which go downstairs into the room leading up to the lobby entrance. Hats, coats, ect. are hung on golden
-          hand-shaped coat hangers. When some of the children and parents hang their coats up they are in for a shock when the golden hands grab tightly onto coats
-          and hats, Wonka quoted the previously seen quote. The children then need to sign a curtain-guarded giant contract before going on.
-        </p>
-        <p>Wonka's favorite room, and debatably the most important in the factory. The room is a grassy meadow full of flowers and trees, with a chocolate river mixed
-          by waterfall that pipes into all the other rooms in the factory. Everything in the meadow is edible, and a boat ride down the chocolate river allows transit
-          to other rooms in the factory via a dark tunnel.</p>
-        <p>The river leads directly between the Chocolate Room and edible marshmallow pillows and the fudge room.</p>
       </section>
       <div className='underline_container'>
         <div className='colour_one_box'></div>
@@ -225,129 +230,137 @@ function App() {
       </div>
       <section id='events'>
 
-        <img src={eventsBg} alt='Chocolate Room' id='events_bg' />
-        <div className='slogan_container'>
-          <h1 className='slogan_top'>A little <span>NONSENSE</span><br /> now and then</h1>
-          <div className='underline_container'>
-            <div className='colour_one_box'></div>
-            <div className='colour_two_box'></div>
+        <div className='section_container'>
+          <img src={eventsBg} alt='Chocolate Room' id='events_bg' />
+          <div className='slogan_container'>
+            <h1 className='slogan_top'>A little <span>NONSENSE</span><br /> now and then</h1>
+            <div className='underline_container'>
+              <div className='colour_one_box'></div>
+              <div className='colour_two_box'></div>
+            </div>
+            <h1 className='slogan_bottom'>is relished by the<br /><span>WISEST</span> men</h1>
           </div>
-          <h1 className='slogan_bottom'>is relished by the<br /><span>WISEST</span> men</h1>
+
+          <div className='events_container'>
+            <div className='subheader_container'>
+              <h1>FACTORY <span>EVENTS</span></h1>
+            </div>
+            <a href='#'>
+              <div className='event_container'>
+                <div className='date_container'>
+                  <h1>5</h1>
+                  <p>June</p>
+                </div>
+                <div className='event_title_container'>
+                  <p>Golden Ticket Release Date</p>
+                  <div className='underline_container_changer'>
+                    <div className='colour_one_box_changer'></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href='#'>
+              <div className='event_container'>
+                <div className='date_container'>
+                  <h1>8</h1>
+                  <p>Aug</p>
+                </div>
+                <div className='event_title_container'>
+                  <p>2022 Tour</p>
+                  <div className='underline_container_changer'>
+                    <div className='colour_one_box_changer'></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href='#'>
+              <div className='subheader_container'>
+                <div>
+                  <p>VIEW ALL EVENTS</p>
+                  <div className='underline_container'>
+                    <div className='colour_two_box'></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div className='events_container'>
-          <div className='subheader_container'>
-            <h1>FACTORY <span>EVENTS</span></h1>
-          </div>
-          <a href='#'>
-            <div className='event_container'>
-              <div className='date_container'>
-                <h1>5</h1>
-                <p>June</p>
-              </div>
-              <div className='event_title_container'>
-                <p>Golden Ticket Release Date</p>
-                <div className='underline_container_changer'>
-                  <div className='colour_one_box_changer'></div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href='#'>
-            <div className='event_container'>
-              <div className='date_container'>
-                <h1>8</h1>
-                <p>Aug</p>
-              </div>
-              <div className='event_title_container'>
-                <p>2022 Tour</p>
-                <div className='underline_container_changer'>
-                  <div className='colour_one_box_changer'></div>
-                </div>
-              </div>
-            </div>
-          </a>
+      </section>
+      <section id='social'>
+        <div className='section_container'>
           <a href='#'>
             <div className='subheader_container'>
+              <h1>WONKA'S <span>TWITTER</span></h1>
               <div>
-                <p>VIEW ALL EVENTS</p>
+                <p>SEE OUT LATEST TWEETS</p>
                 <div className='underline_container'>
                   <div className='colour_two_box'></div>
                 </div>
               </div>
             </div>
           </a>
+          <Slider {...sliderSettings}>
+            <div>
+              <h3><Card className="bg-dark text-white">
+                <Card.Img src={heroOne} alt="Card image" />
+                <Card.ImgOverlay>
+                  <Card.Title>Gallery</Card.Title>
+                </Card.ImgOverlay>
+              </Card></h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+            <div>
+              <h3>5</h3>
+            </div>
+            <div>
+              <h3>6</h3>
+            </div>
+            <div>
+              <h3>7</h3>
+            </div>
+            <div>
+              <h3>8</h3>
+            </div>
+          </Slider>
         </div>
       </section>
-      <section id='social'>
-        <a href='#'>
+      <section id='gallery'>
+        <div className='section_container'>
           <div className='subheader_container'>
-            <h1>WONKA'S <span>TWITTER</span></h1>
+            <h1>WONKA'S <span>GALLERY</span></h1>
             <div>
-              <p>SEE OUT LATEST TWEETS</p>
+              <p>VIEW ALL GALLERIES</p>
               <div className='underline_container'>
                 <div className='colour_two_box'></div>
               </div>
             </div>
           </div>
-        </a>
-        <Slider {...sliderSettings}>
-          <div>
-            <h3><Card className="bg-dark text-white">
-              <Card.Img src={heroOne} alt="Card image" />
-              <Card.ImgOverlay>
-                <Card.Title>1971 Tour</Card.Title>
-              </Card.ImgOverlay>
-            </Card></h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-          <div>
-            <h3>7</h3>
-          </div>
-          <div>
-            <h3>8</h3>
-          </div>
-        </Slider>
-      </section>
-      <section id='gallery'>
-        <div className='subheader_container'>
-          <h1>WONKA'S <span>GALLERY</span></h1>
-          <div>
-            <p>VIEW ALL GALLERIES</p>
-            <div className='underline_container'>
-              <div className='colour_two_box'></div>
+          <div className='cards_container'>
+            <div className='card_container'>
+              <Card className="bg-dark text-white">
+                <Card.Img src={heroOne} alt="Card image" />
+                <Card.ImgOverlay>
+                  <div className='overlay_container'>
+                    <Card.Title>Gallery</Card.Title>
+                  </div>
+                </Card.ImgOverlay>
+              </Card>
+              <div className='underline_container'>
+                <div className='colour_two_box'></div>
+              </div>
             </div>
           </div>
         </div>
-        <div className='cards_container'>
-          <div className='card_container'>
-            <Card className="bg-dark text-white">
-              <Card.Img src={heroOne} alt="Card image" />
-              <Card.ImgOverlay>
-                <div className='overlay_container'>
-                  <Card.Title>1971 Tour</Card.Title>
-                </div>
-              </Card.ImgOverlay>
-            </Card>
-            <div className='underline_container'>
-              <div className='colour_two_box'></div>
-            </div>
-          </div>
-        </div>
+
 
 
       </section>
@@ -368,65 +381,75 @@ function App() {
           </Map>
         </div>
       </section>
-      <section id='accreditations'></section>
-      <section id='contact'>
-        <div id='find_us' className='contact_info'>
-          <div className='title_container'>
-            <h2>FIND US</h2>
-            <div className='underline_container'>
-              <div className='colour_two_box'></div>
-            </div>
-          </div>
-          <p><span className='highlight_text'>Willy Wonka's Chocolate Factory</span></p>
-          <div className='address_logo_container'>
-            <address>
-              1445 Norwood Ave, <br />
-              Itasca, <br />
-              IL 60143
-            </address>
-            <img src={logo} alt='wonka_logo' className='logo' />
-          </div>
-          <hr />
-        </div>
-        <div id='contact_us' className='contact_info'>
-          <div className='title_container'>
-            <h2>CONTACT US</h2>
-            <div className='underline_container'>
-              <div className='colour_two_box'></div>
-            </div>
-          </div>
-          <p>Gurdeep Roy <span className='highlight_text'>|</span> Head Oompa Loompa</p>
-          <address>
-            <a href='tel:07852880898'><span className='highlight_text'>07852 880 898</span></a><br />
-            <a href='mailto:tonyhaunschmidt@gmail.com'>admin@chocofactory.com</a>
-          </address>
-          <p>The Inventing Room <span className='highlight_text'>|</span></p>
-          <address>
-            <a href='tel:07852880898'><span className='highlight_text'>07852 880 898</span></a><br />
-            <a href='mailto:tonyhaunschmidt@gmail.com'>admin@chocofactory.com</a>
-          </address>
-          <hr />
-        </div>
-        <div id='partnership' className='contact_info'>
-          <div className='title_container'>
-            <h2>PARTNERSHIP</h2>
-            <div className='underline_container'>
-              <div className='colour_two_box'></div>
-            </div>
-          </div>
-          <p>Willy Wonka's Chocolate Factory is proud to be part of the British Chocolate Association.</p>
-          {/*<img />*/}
-          <hr />
+      <section id='accreditations'>
+        <div className='section_container'>
+
         </div>
       </section>
+      <section id='contact'>
+        <div className='section_container'>
+          <div id='find_us' className='contact_info'>
+            <div className='title_container'>
+              <h2>FIND US</h2>
+              <div className='underline_container'>
+                <div className='colour_two_box'></div>
+              </div>
+            </div>
+            <p><span className='highlight_text'>Willy Wonka's Chocolate Factory</span></p>
+            <div className='address_logo_container'>
+              <address>
+                1445 Norwood Ave, <br />
+                Itasca, <br />
+                IL 60143
+              </address>
+              <img src={logo} alt='wonka_logo' className='logo' />
+            </div>
+            <hr />
+          </div>
+          <div id='contact_us' className='contact_info'>
+            <div className='title_container'>
+              <h2>CONTACT US</h2>
+              <div className='underline_container'>
+                <div className='colour_two_box'></div>
+              </div>
+            </div>
+            <p>Gurdeep Roy <span className='highlight_text'>|</span> Head Oompa Loompa</p>
+            <address>
+              <a href='tel:07852880898'><span className='highlight_text'>07852 880 898</span></a><br />
+              <a href='mailto:tonyhaunschmidt@gmail.com'>admin@chocofactory.com</a>
+            </address>
+            <p>The Inventing Room <span className='highlight_text'>|</span></p>
+            <address>
+              <a href='tel:07852880898'><span className='highlight_text'>07852 880 898</span></a><br />
+              <a href='mailto:tonyhaunschmidt@gmail.com'>admin@chocofactory.com</a>
+            </address>
+            <hr />
+          </div>
+          <div id='partnership' className='contact_info'>
+            <div className='title_container'>
+              <h2>PARTNERSHIP</h2>
+              <div className='underline_container'>
+                <div className='colour_two_box'></div>
+              </div>
+            </div>
+            <p>Willy Wonka's Chocolate Factory is proud to be part of the British Chocolate Association.</p>
+            {/*<img />*/}
+            <hr />
+          </div>
+        </div>
+
+      </section>
       <footer>
-        <p><small>&copy; Willy Wonka's Chocolate Factory. All Rights Reserved. Website by <a href='https://www.tonyhaunschmidt.com/'>Tony Haunschmidt</a>.</small></p>
-        <ul>
-          <a href="#"><li><small>Website Policy</small></li></a>
-          <a href="#"><li><small>Cookies Policy</small></li></a>
-          <a href="#"><li><small>Login</small></li></a> {/*hide and have another section above that is unhid */}
-          <a href="#"><li><span class="material-symbols-outlined">lock</span></li></a>
-        </ul>
+        <div className='section_container'>
+          <p><small>&copy; Willy Wonka's Chocolate Factory. All Rights Reserved. Website by <a href='https://www.tonyhaunschmidt.com/'>Tony Haunschmidt</a>.</small></p>
+          <ul>
+            <a href="#"><li><small>Website Policy</small></li></a>
+            <a href="#"><li><small>Cookies Policy</small></li></a>
+            <a href="#"><li><small>Login</small></li></a> {/*hide and have another section above that is unhid */}
+            <a href="#"><li><span class="material-symbols-outlined">lock</span></li></a>
+          </ul>
+        </div>
+
       </footer>
     </>
 
