@@ -49,18 +49,11 @@ function App() {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 0
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
         }
       }
     ]
@@ -203,9 +196,8 @@ function App() {
       </section>
       <section id='welcome' ref={welcome}>
         <div className='section_container'>
-          {/*<img />*/}
+          <img src={logo} alt='welcome' />
           <h1><span id='welcome_to'>WELCOME TO</span><br />Willy Wonka's Cholocolate Factory</h1>
-          <div className='underline_container'><div className='colour_one'></div><div className='colour_two'></div></div>
           <div className='underline_container'>
             <div className='colour_one_box'></div>
             <div className='colour_two_box'></div>
@@ -220,6 +212,10 @@ function App() {
             by waterfall that pipes into all the other rooms in the factory. Everything in the meadow is edible, and a boat ride down the chocolate river allows transit
             to other rooms in the factory via a dark tunnel.</p>
           <p>The river leads directly between the Chocolate Room and edible marshmallow pillows and the fudge room.</p>
+          <p>Despite maintaining the appearance of a standard production facility, the Wonka Chocolate Factory contains an extremely intricate and bizarre layout. It is
+            likely that construction went deep underground in order to accommodate Wonka's chocolate river and massive amount of rooms and locations.
+          </p>
+          <p>The factory features two main methods of navigation: the great glass elevator and a flume along the chocolate river. The elevator is said to be more efficient.</p>
         </div>
       </section>
       <div className='underline_container'>
@@ -305,7 +301,7 @@ function App() {
               <Card className="bg-dark text-white">
                 <Card.Img src={heroOne} alt="Card image" />
                 <Card.ImgOverlay>
-                  <div className=''>
+                  <div className='text_over_image'>
                     <h3>30 May, 2022</h3>
                     <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
                   </div>
@@ -328,9 +324,9 @@ function App() {
               <Card className="bg-dark text-white">
                 <Card.Img src={heroOne} alt="Card image" />
                 <Card.ImgOverlay>
-                  <div className=''>
+                  <div className='text_over_image'>
                     <h3>30 May, 2022</h3>
-                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
+                    <p>Exciting new things being cooked up in the inventing room. They're just not..</p>
                   </div>
                 </Card.ImgOverlay>
                 <Card.ImgOverlay>
@@ -342,7 +338,7 @@ function App() {
                         <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
                       </div>
                     </div>
-                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be small traces of human in the next batch of chocolate. Please get in touch if you have any allergic reactions.</p>
+                    <p>Exciting new things being cooked up in the inventing room. They're just not ready quite yet. Unless you want to be a blueberry...</p>
                   </div>
                 </Card.ImgOverlay>
               </Card>
@@ -351,9 +347,9 @@ function App() {
               <Card className="bg-dark text-white">
                 <Card.Img src={heroOne} alt="Card image" />
                 <Card.ImgOverlay>
-                  <div className=''>
+                  <div className='text_over_image'>
                     <h3>30 May, 2022</h3>
-                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
+                    <p>If You Want To View Paradise, Simply Look Around And View It.</p>
                   </div>
                 </Card.ImgOverlay>
                 <Card.ImgOverlay>
@@ -365,7 +361,7 @@ function App() {
                         <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
                       </div>
                     </div>
-                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be small traces of human in the next batch of chocolate. Please get in touch if you have any allergic reactions.</p>
+                    <p>If You Want To View Paradise, Simply Look Around And View It.</p>
                   </div>
                 </Card.ImgOverlay>
               </Card>
@@ -374,9 +370,9 @@ function App() {
               <Card className="bg-dark text-white">
                 <Card.Img src={heroOne} alt="Card image" />
                 <Card.ImgOverlay>
-                  <div className=''>
+                  <div className='text_over_image'>
                     <h3>30 May, 2022</h3>
-                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
+                    <p>If The Good Lord Had Intended Us To Walk He Wouldn't Have Invented Roller Skates.</p>
                   </div>
                 </Card.ImgOverlay>
                 <Card.ImgOverlay>
@@ -388,7 +384,7 @@ function App() {
                         <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
                       </div>
                     </div>
-                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be small traces of human in the next batch of chocolate. Please get in touch if you have any allergic reactions.</p>
+                    <p>If The Good Lord Had Intended Us To Walk He Wouldn't Have Invented Roller Skates.</p>
                   </div>
                 </Card.ImgOverlay>
               </Card>
@@ -397,9 +393,9 @@ function App() {
               <Card className="bg-dark text-white">
                 <Card.Img src={heroOne} alt="Card image" />
                 <Card.ImgOverlay>
-                  <div className=''>
+                  <div className='text_over_image'>
                     <h3>30 May, 2022</h3>
-                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
+                    <p>We Are The Music Makers And We Are The Dreamers Of The Dreams.</p>
                   </div>
                 </Card.ImgOverlay>
                 <Card.ImgOverlay>
@@ -411,7 +407,7 @@ function App() {
                         <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
                       </div>
                     </div>
-                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be small traces of human in the next batch of chocolate. Please get in touch if you have any allergic reactions.</p>
+                    <p>We Are The Music Makers And We Are The Dreamers Of The Dreams.</p>
                   </div>
                 </Card.ImgOverlay>
               </Card>
@@ -420,9 +416,9 @@ function App() {
               <Card className="bg-dark text-white">
                 <Card.Img src={heroOne} alt="Card image" />
                 <Card.ImgOverlay>
-                  <div className=''>
+                  <div className='text_over_image'>
                     <h3>30 May, 2022</h3>
-                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be... </p>
+                    <p>Where is fancy bred? In the heart or in the head?</p>
                   </div>
                 </Card.ImgOverlay>
                 <Card.ImgOverlay>
@@ -434,7 +430,7 @@ function App() {
                         <p><a href='#' >@WonkaChoco</a> 30 May, 2022</p>
                       </div>
                     </div>
-                    <p>Due do a somewhat greedy disposition of a Dusseldorfian, there may be small traces of human in the next batch of chocolate. Please get in touch if you have any allergic reactions.</p>
+                    <p>Where is fancy bred? In the heart or in the head?</p>
                   </div>
                 </Card.ImgOverlay>
               </Card>
@@ -456,19 +452,21 @@ function App() {
             </div>
           </a>
           <div className='cards_container'>
-            <div className='card_container'>
-              <Card className="bg-dark text-white">
-                <Card.Img src={heroOne} alt="Card image" />
-                <Card.ImgOverlay>
-                  <div className='overlay_container'>
-                    <Card.Title>Gallery</Card.Title>
-                  </div>
-                </Card.ImgOverlay>
-              </Card>
-              <div className='underline_container'>
-                <div className='colour_two_box'></div>
+            <a href='#'>
+              <div className='card_container'>
+                <Card className="bg-dark text-white">
+                  <Card.Img src={heroOne} alt="Card image" />
+                  <Card.ImgOverlay>
+                    <div className='overlay_container'>
+                      <Card.Title>Gallery</Card.Title>
+                    </div>
+                  </Card.ImgOverlay>
+                </Card>
+                <div className='underline_container'>
+                  <div className='colour_two_box'></div>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
